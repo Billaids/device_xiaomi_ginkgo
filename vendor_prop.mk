@@ -64,7 +64,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_inline_rotator=1 \
     vendor.display.disable_scaler=0 \
     vendor.display.enable_default_color_mode=0 \
-    vendor.display.enable_null_display=0 \
+    vendor.display.enable_null_display=1 \
     vendor.gralloc.disable_ubwc=0
 
 # Graphics 
@@ -77,7 +77,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=1 \
-
+    debug.sf.early_phase_offset_ns=5000000	
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
